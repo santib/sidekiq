@@ -10,7 +10,8 @@ gem "activerecord-jdbcsqlite3-adapter", platforms: :jruby
 
 group :test do
   gem "minitest"
-  gem "simplecov"
+  # CodeClimate doesn't support simplecov 0.18+ yet
+  gem "simplecov", "~> 0.17.1"
 end
 
 group :development, :test do
